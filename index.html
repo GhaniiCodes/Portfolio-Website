@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="profile-pic-container">
+                <img src="Profile Pic.jpg" alt="Profile Picture" class="profile-pic">
+            </div>
+            <ul>
+                <li><a onclick="showSection('home')">Home</a></li>
+                <li><a onclick="showSection('education')">Education</a></li>
+                <li><a onclick="showSection('links')">Links</a></li>
+                <li><a onclick="showSection('skills')">Skills & Resume</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Home Section -->
+        <div id="home" class="section active">
+            <div class="card">
+                <h1>Welcome to My Portfolio</h1>
+                <h2>Personal Information</h2>
+                
+                <div class="info-grid">
+                    <div class="info-item">
+                        <div class="info-label">Full Name</div>
+                        <div>Muhammad Usman Ghani</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Email</div>
+                        <div>muhammadghaniusman09811@gmail.com</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Phone</div>
+                        <div>+92 3149141687</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Location</div>
+                        <div>Peshawar, Pakistan</div>
+                    </div>
+                </div>
+
+                <h3>About Me</h3>
+                <p style="margin-top: 1rem; line-height: 1.8;">
+                    Passionate AI/ML Developer with a strong foundation in
+                     building innovative machine learning models and
+                      data-driven solutions. Experienced in developing
+                       projects such as churn prediction models,
+                        crop recommendation systems, and text classification
+                        using advanced techniques like ANNs, LSTMs,
+                        and GRUs. Skilled in Python, TensorFlow, Keras, 
+                        and Streamlit, with a focus on creating impactful,
+                         user-friendly applications. Actively engaged in
+                          the AI/ML community, sharing knowledge and 
+                          collaborating on cutting-edge projects. Always
+                          eager to explore new advancements in
+                           artificial intelligence and apply them to solve
+                            real-world challenges. Connect with me to discuss
+                             AI, ML, or exciting opportunities in the field!
+                </p>
+            </div>
+        </div>
+
+        <!-- Education Section -->
+        <div id="education" class="section">
+            <div class="card">
+                <h2>Education</h2>
+                
+                <div class="education-item">
+                    <h3>Bachelor's Degree in Artificial Intelligence</h3>
+                    <p><strong>Islamia College University Peshawar</strong></p>
+                    <p>Year: 2023 - 2027</p>
+                    <p style="margin-top: 0.5rem;">
+                        Relevant coursework: Data Structures, Algorithms, Web Development, 
+                        Artificial Intelligence, Machine Learning, Deep Learning, Natural Language Processing, 
+                        Agentic AI, Generative AI, Computer Vision, Reinforcement Learning.  
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Links Section -->
+        <div id="links" class="section">
+            <div class="card">
+                <h2>Connect With Me</h2>
+                
+                <h3>Professional Links</h3>
+                <div class="link-buttons">
+                    <a href="https://www.linkedin.com/in/muhammadusmanghani09811" target="_blank" class="btn">
+                        LinkedIn Profile
+                    </a>
+                    <a href="https://github.com/GhaniiCodes" target="_blank" class="btn">
+                        GitHub Profile
+                    </a>
+                </div>
+
+                <h3>Contact Information</h3>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <div class="info-label">Email</div>
+                        <div><a href="mailto:muhammadghaniusman09811@gmail.com" style="color: #4b5563;">muhammadghaniusman09811@gmail.com</a></div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Phone</div>
+                        <div>+92 3149141687</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills & Resume Section -->
+        <div id="skills" class="section">
+            <div class="card">
+                <h2>Skills & Resume</h2>
+
+                <!-- Skills Grid -->
+                <div class="skills-grid">
+                    <div class="skill-badge">
+                        <div class="skill-icon">AI</div>
+                        <div class="skill-name">Artificial Intelligence</div>
+                    </div>
+                    <div class="skill-badge">
+                        <div class="skill-icon">ML</div>
+                        <div class="skill-name">Machine Learning</div>
+                    </div>
+                    <div class="skill-badge">
+                        <div class="skill-icon">DL</div>
+                        <div class="skill-name">Deep Learning</div>
+                    </div>
+                    <div class="skill-badge">
+                        <div class="skill-icon">CV</div>
+                        <div class="skill-name">Computer Vision</div>
+                    </div>
+                    <div class="skill-badge">
+                        <div class="skill-icon">AG</div>
+                        <div class="skill-name">Agentic AI</div>
+                    </div>
+                    <div class="skill-badge">
+                        <div class="skill-icon">GA</div>
+                        <div class="skill-name">Generative AI</div>
+                    </div>
+                    <div class="skill-badge">
+                        <div class="skill-icon">FS</div>
+                        <div class="skill-name">Full Stack</div>
+                    </div>
+                </div>
+
+                <!-- Resume Section -->
+                <h3 style="margin-top: 2.5rem;">My Resume</h3>
+                <p style="margin-bottom: 1rem; color: var(--text-light);">
+                    View or download my detailed resume in PDF format.
+                </p>
+
+                <div class="resume-container">
+                    <!-- Embedded PDF Viewer -->
+                    <iframe 
+                        src="Resume.pdf" 
+                        width="100%" 
+                        height="600" 
+                        style="border: none; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,0,0,0.3);"
+                        title="Muhammad Usman Ghani - Resume">
+                    </iframe>
+
+                    <!-- Download Button -->
+                    <div style="text-align: center; margin-top: 1rem;">
+                        <a href="resume.pdf" download class="btn" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            Download Resume (PDF)
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('.section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
